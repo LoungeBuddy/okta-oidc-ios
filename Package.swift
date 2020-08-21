@@ -31,7 +31,10 @@ let package = Package(
         .target(
             name: "AppAuth",
             dependencies: [],
-            path: "Okta/AppAuth"
+            path: "Okta/AppAuth",
+            cSettings: [
+              .headerSearchPath("Internal"),
+           ]
         ),
     ],
     swiftLanguageVersions: [.v5]
